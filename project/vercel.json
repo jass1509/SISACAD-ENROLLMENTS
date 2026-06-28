@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "project/sisacad/wsgi.py",
+            "use": "@vercel/python",
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "project/sisacad/wsgi.py"
+        }
+    ]
+}
